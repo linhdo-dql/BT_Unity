@@ -1,0 +1,564 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcbfdf16f0b9411cad3a1d7b83e8252, type: 3}
+  m_Name: Csv.Monster
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _dataMonster:
+  - monsterId: 0010101
+    monsterName: Blue Goblin
+    monsterModelId: 0010101
+    monsterHp: 200
+    monsterHpUp: 50
+    monsterAp: 5
+    monsterApUp: 5
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 0
+    monsterMdpUp: 0
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0010102
+    monsterName: Yellow Goblin
+    monsterModelId: 0010102
+    monsterHp: 450
+    monsterHpUp: 100
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 100
+    monsterDpUp: 5
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 0
+    monsterMdpUp: 0
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0010103
+    monsterName: Red Goblin
+    monsterModelId: 0010103
+    monsterHp: 600
+    monsterHpUp: 150
+    monsterAp: 15
+    monsterApUp: 5
+    monsterDp: 200
+    monsterDpUp: 5
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 0
+    monsterMdpUp: 0
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0010201
+    monsterName: Blue Orc
+    monsterModelId: 0010201
+    monsterHp: 600
+    monsterHpUp: 150
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 150
+    monsterDpUp: 25
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0010202
+    monsterName: Yellow Orc
+    monsterModelId: 0010202
+    monsterHp: 900
+    monsterHpUp: 150
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 200
+    monsterDpUp: 25
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0
+  - monsterId: 0010203
+    monsterName: Red Orc
+    monsterModelId: 0010203
+    monsterHp: 1200
+    monsterHpUp: 150
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 300
+    monsterDpUp: 25
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0
+  - monsterId: 0010301
+    monsterName: Blue Werebat
+    monsterModelId: 0010301
+    monsterHp: 600
+    monsterHpUp: 150
+    monsterAp: 0
+    monsterApUp: 0
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 15
+    monsterMapUp: 5
+    monsterMdp: 250
+    monsterMdpUp: 25
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0010302
+    monsterName: Yellow Werebat
+    monsterModelId: 0010302
+    monsterHp: 900
+    monsterHpUp: 150
+    monsterAp: 0
+    monsterApUp: 0
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 25
+    monsterMapUp: 5
+    monsterMdp: 300
+    monsterMdpUp: 25
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0010303
+    monsterName: Red Werebat
+    monsterModelId: 0010303
+    monsterHp: 1200
+    monsterHpUp: 150
+    monsterAp: 0
+    monsterApUp: 0
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 50
+    monsterMapUp: 5
+    monsterMdp: 500
+    monsterMdpUp: 25
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0010401
+    monsterName: Blue Razor
+    monsterModelId: 0010401
+    monsterHp: 5000
+    monsterHpUp: 1000
+    monsterAp: 75
+    monsterApUp: 25
+    monsterDp: 125
+    monsterDpUp: 15
+    monsterMap: 75
+    monsterMapUp: 25
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0010402
+    monsterName: Yellow Razor
+    monsterModelId: 0010402
+    monsterHp: 7500
+    monsterHpUp: 1500
+    monsterAp: 150
+    monsterApUp: 50
+    monsterDp: 125
+    monsterDpUp: 15
+    monsterMap: 150
+    monsterMapUp: 50
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0010403
+    monsterName: Red Razor
+    monsterModelId: 0010403
+    monsterHp: 10000
+    monsterHpUp: 2500
+    monsterAp: 200
+    monsterApUp: 75
+    monsterDp: 125
+    monsterDpUp: 15
+    monsterMap: 200
+    monsterMapUp: 75
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0020101
+    monsterName: Flame Slark
+    monsterModelId: 0020101
+    monsterHp: 300
+    monsterHpUp: 50
+    monsterAp: 5
+    monsterApUp: 5
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 50
+    monsterMapUp: 5
+    monsterMdp: 0
+    monsterMdpUp: 0
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0020102
+    monsterName: Poison Slark
+    monsterModelId: 0020102
+    monsterHp: 450
+    monsterHpUp: 100
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 100
+    monsterDpUp: 5
+    monsterMap: 65
+    monsterMapUp: 5
+    monsterMdp: 0
+    monsterMdpUp: 0
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0020103
+    monsterName: Ice Slark
+    monsterModelId: 0020103
+    monsterHp: 600
+    monsterHpUp: 150
+    monsterAp: 15
+    monsterApUp: 5
+    monsterDp: 200
+    monsterDpUp: 5
+    monsterMap: 75
+    monsterMapUp: 5
+    monsterMdp: 0
+    monsterMdpUp: 0
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0020201
+    monsterName: Flame Rhino
+    monsterModelId: 0020201
+    monsterHp: 600
+    monsterHpUp: 150
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 150
+    monsterDpUp: 25
+    monsterMap: 25
+    monsterMapUp: 5
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0020202
+    monsterName: Poison Rhino
+    monsterModelId: 0020202
+    monsterHp: 900
+    monsterHpUp: 150
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 200
+    monsterDpUp: 25
+    monsterMap: 40
+    monsterMapUp: 5
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0
+  - monsterId: 0020203
+    monsterName: Ice Rhino
+    monsterModelId: 0020203
+    monsterHp: 1200
+    monsterHpUp: 150
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 300
+    monsterDpUp: 25
+    monsterMap: 65
+    monsterMapUp: 5
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0
+  - monsterId: 0020301
+    monsterName: Flame Catapult
+    monsterModelId: 0020301
+    monsterHp: 600
+    monsterHpUp: 150
+    monsterAp: 0
+    monsterApUp: 0
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 35
+    monsterMapUp: 5
+    monsterMdp: 250
+    monsterMdpUp: 25
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0020302
+    monsterName: Poison Catapult
+    monsterModelId: 0020302
+    monsterHp: 900
+    monsterHpUp: 150
+    monsterAp: 0
+    monsterApUp: 0
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 55
+    monsterMapUp: 5
+    monsterMdp: 300
+    monsterMdpUp: 25
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0020303
+    monsterName: Ice Catapult
+    monsterModelId: 0020303
+    monsterHp: 1200
+    monsterHpUp: 150
+    monsterAp: 0
+    monsterApUp: 0
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 75
+    monsterMapUp: 5
+    monsterMdp: 500
+    monsterMdpUp: 25
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0020401
+    monsterName: Flame Ursa
+    monsterModelId: 0020401
+    monsterHp: 5000
+    monsterHpUp: 1000
+    monsterAp: 75
+    monsterApUp: 25
+    monsterDp: 125
+    monsterDpUp: 15
+    monsterMap: 75
+    monsterMapUp: 25
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0
+  - monsterId: 0020402
+    monsterName: Poison Ursa
+    monsterModelId: 0020402
+    monsterHp: 7500
+    monsterHpUp: 1500
+    monsterAp: 150
+    monsterApUp: 50
+    monsterDp: 125
+    monsterDpUp: 15
+    monsterMap: 150
+    monsterMapUp: 50
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0020403
+    monsterName: Dead Mist Ursa
+    monsterModelId: 0020403
+    monsterHp: 10000
+    monsterHpUp: 2500
+    monsterAp: 200
+    monsterApUp: 75
+    monsterDp: 125
+    monsterDpUp: 15
+    monsterMap: 200
+    monsterMapUp: 75
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0030101
+    monsterName: Blue Speedor
+    monsterModelId: 0030101
+    monsterHp: 300
+    monsterHpUp: 50
+    monsterAp: 5
+    monsterApUp: 5
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 0
+    monsterMdpUp: 0
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0
+  - monsterId: 0030102
+    monsterName: Yellow Speedor
+    monsterModelId: 0030102
+    monsterHp: 450
+    monsterHpUp: 100
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 100
+    monsterDpUp: 5
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 0
+    monsterMdpUp: 0
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0030103
+    monsterName: Red Speedor
+    monsterModelId: 0030103
+    monsterHp: 600
+    monsterHpUp: 150
+    monsterAp: 15
+    monsterApUp: 5
+    monsterDp: 200
+    monsterDpUp: 5
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 0
+    monsterMdpUp: 0
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0030201
+    monsterName: Blue Blade
+    monsterModelId: 0030201
+    monsterHp: 600
+    monsterHpUp: 150
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 150
+    monsterDpUp: 25
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0
+  - monsterId: 0030202
+    monsterName: Yellow Blade
+    monsterModelId: 0030202
+    monsterHp: 900
+    monsterHpUp: 150
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 200
+    monsterDpUp: 25
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0030203
+    monsterName: Red Blade
+    monsterModelId: 0030203
+    monsterHp: 1200
+    monsterHpUp: 150
+    monsterAp: 10
+    monsterApUp: 5
+    monsterDp: 300
+    monsterDpUp: 25
+    monsterMap: 0
+    monsterMapUp: 0
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0030301
+    monsterName: Blue Gunner
+    monsterModelId: 0030301
+    monsterHp: 600
+    monsterHpUp: 150
+    monsterAp: 0
+    monsterApUp: 0
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 15
+    monsterMapUp: 5
+    monsterMdp: 250
+    monsterMdpUp: 25
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0
+  - monsterId: 0030302
+    monsterName: Yellow Gunner
+    monsterModelId: 0030302
+    monsterHp: 900
+    monsterHpUp: 150
+    monsterAp: 0
+    monsterApUp: 0
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 25
+    monsterMapUp: 5
+    monsterMdp: 300
+    monsterMdpUp: 25
+    monsterPhysResistanceRate: 0
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0030303
+    monsterName: Red Gunner
+    monsterModelId: 0030303
+    monsterHp: 1200
+    monsterHpUp: 150
+    monsterAp: 0
+    monsterApUp: 0
+    monsterDp: 0
+    monsterDpUp: 0
+    monsterMap: 50
+    monsterMapUp: 5
+    monsterMdp: 500
+    monsterMdpUp: 25
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0030401
+    monsterName: Blue Godzilar
+    monsterModelId: 0030401
+    monsterHp: 5000
+    monsterHpUp: 1000
+    monsterAp: 75
+    monsterApUp: 25
+    monsterDp: 250
+    monsterDpUp: 15
+    monsterMap: 75
+    monsterMapUp: 25
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0030402
+    monsterName: Yellow Godzilar
+    monsterModelId: 0030402
+    monsterHp: 7500
+    monsterHpUp: 1500
+    monsterAp: 150
+    monsterApUp: 50
+    monsterDp: 250
+    monsterDpUp: 15
+    monsterMap: 150
+    monsterMapUp: 50
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0.5
+  - monsterId: 0030403
+    monsterName: Red Godzilar
+    monsterModelId: 0030403
+    monsterHp: 10000
+    monsterHpUp: 2500
+    monsterAp: 200
+    monsterApUp: 75
+    monsterDp: 250
+    monsterDpUp: 15
+    monsterMap: 200
+    monsterMapUp: 75
+    monsterMdp: 125
+    monsterMdpUp: 15
+    monsterPhysResistanceRate: 0.5
+    monsterMagResistanceRate: 0.5
