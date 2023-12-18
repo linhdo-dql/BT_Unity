@@ -1,16 +1,19 @@
 using BehaviorDesigner.Runtime.Tasks;
+using Sisus.Debugging;
 
 public class CheckBelowHealth : Conditional
 {
     public Utils.ObjectType objectType;
     public Utils.PropCompare prop = Utils.PropCompare.Less;
     public float healthPoint;
+    private EnemyController ec;
     public override void OnStart()
     {
-        
+        ec = GetComponent<EnemyController>();
     }
     public override TaskStatus OnUpdate()
     {
+        Debug.Log("[" + ec.id + "] Current Health: " + GetCurrentHP());
         var val = prop == Utils.PropCompare.Less ? GetCurrentHP() > healthPoint : GetCurrentHP() < healthPoint;
         return val ? TaskStatus.Success : TaskStatus.Failure;
     }

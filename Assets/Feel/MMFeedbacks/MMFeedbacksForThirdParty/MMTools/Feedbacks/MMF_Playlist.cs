@@ -23,7 +23,7 @@ namespace MoreMountains.Feedbacks
 		public override bool HasChannel => true;
 		#endif
 		
-		public enum Modes { Play, PlayNext, PlayPrevious, Stop, Pause, PlaySongAt, SetVolumeMultiplier, ChangePlaylist }
+		public enum Modes { Play, PlayNext, PlayPrevious, Stop, Pause, PlaySongAt, SetVolumeMultiplier }
  
 		[MMFInspectorGroup("MMPlaylist", true, 13)]
 		/// the action to call on the playlist
@@ -41,14 +41,6 @@ namespace MoreMountains.Feedbacks
 		[Tooltip("whether to apply the volume multiplier instantly (true) or only when the next song starts playing (false)")]
 		[MMEnumCondition("Mode", (int)Modes.SetVolumeMultiplier)]
 		public bool ApplyVolumeMultiplierInstantly = false;
-		/// in change playlist mode, the playlist to which to switch to. Only works with MMSMPlaylistManager
-		[Tooltip("in change playlist mode, the playlist to which to switch to. Only works with MMSMPlaylistManager")]
-		[MMEnumCondition("Mode", (int)Modes.ChangePlaylist)]
-		public MMSMPlaylist NewPlaylist;
-		/// in change playlist mode, whether or not to play the new playlist after the switch. Only works with MMSMPlaylistManager
-		[Tooltip("in change playlist mode, whether or not to play the new playlist after the switch. Only works with MMSMPlaylistManager")]
-		[MMEnumCondition("Mode", (int)Modes.ChangePlaylist)]
-		public bool ChangePlaylistAndPlay = true;
         
 		protected Coroutine _coroutine;
 
@@ -86,9 +78,6 @@ namespace MoreMountains.Feedbacks
 					break;
 				case Modes.SetVolumeMultiplier:
 					MMPlaylistVolumeMultiplierEvent.Trigger(Channel, VolumeMultiplier, ApplyVolumeMultiplierInstantly);
-					break;
-				case Modes.ChangePlaylist:
-					MMPlaylistChangeEvent.Trigger(Channel, NewPlaylist, ChangePlaylistAndPlay);
 					break;
 				default:
 					throw new ArgumentOutOfRangeException();

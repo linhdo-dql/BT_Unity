@@ -7,7 +7,6 @@ using UnityEngine;
 using UnityEngine.Audio;
 using MoreMountains.Tools;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace MoreMountains.Feedbacks
@@ -79,10 +78,6 @@ namespace MoreMountains.Feedbacks
 		[Tooltip("the size of the pool when in Pool mode")]
 		[MMFEnumCondition("PlayMethod", (int)PlayMethods.Pool)]
 		public int PoolSize = 10;
-		/// in event mode, whether to use legacy events (MMSfxEvent) or the current events (MMSoundManagerSoundPlayEvent)
-		[Tooltip("in event mode, whether to use legacy events (MMSfxEvent) or the current events (MMSoundManagerSoundPlayEvent)")]
-		[MMFEnumCondition("PlayMethod", (int)PlayMethods.Event)]
-		public bool UseLegacyEventsMode = false;
 		/// if this is true, calling Stop on this feedback will also stop the sound from playing further
 		[Tooltip("if this is true, calling Stop on this feedback will also stop the sound from playing further")]
 		public bool StopSoundOnFeedbackStop = true;
@@ -312,27 +307,7 @@ namespace MoreMountains.Feedbacks
 			switch (PlayMethod)
 			{
 				case PlayMethods.Event:
-					if (UseLegacyEventsMode)
-					{
-						MMSfxEvent.Trigger(sfx, SfxAudioMixerGroup, volume, pitch, Priority);
-					}
-					else
-					{
-						MMSoundManagerPlayOptions options = new MMSoundManagerPlayOptions();
-						options = MMSoundManagerPlayOptions.Default;
-						options.Location = Owner.transform.position;
-						options.AudioGroup = SfxAudioMixerGroup;
-						options.DoNotAutoRecycleIfNotDonePlaying = false;
-						options.Volume = volume;
-						options.Pitch = pitch;
-						if (Priority >= 0)
-						{
-							options.Priority = Mathf.Min(Priority, 256);
-						}
-						options.MmSoundManagerTrack = MMSoundManager.MMSoundManagerTracks.Sfx;
-						options.Loop = false;
-						MMSoundManagerSoundPlayEvent.Trigger(sfx, options);	
-					}
+					MMSfxEvent.Trigger(sfx, SfxAudioMixerGroup, volume, pitch, Priority);
 					break;
 				case PlayMethods.Cached:
 					// we set that audio source clip to the one in paramaters

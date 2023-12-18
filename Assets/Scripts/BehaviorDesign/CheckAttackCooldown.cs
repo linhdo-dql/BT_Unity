@@ -20,6 +20,7 @@ public class CheckAttackCooldown : Conditional
     {
         SetAttack(attackNumber.Value);
         bool value = GetCooldownOfAttack(attackNumber.Value);
+        Debug.Log("[" + ec.id + "]" + (value ? "Attack_" + attackNumber + "_outOf_cooldown" : "Attack_" + attackNumber + "_on_cooldown"));
         return value ? TaskStatus.Failure : TaskStatus.Success;
     }
 

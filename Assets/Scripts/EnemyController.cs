@@ -88,6 +88,7 @@ public class EnemyController : MonoBehaviour
 
     internal void Attack(int value)
     {
+        Debug.Log("["+id+"] Attack");
         atk01.SetActive(false);
         if(atk02!=null)
         {

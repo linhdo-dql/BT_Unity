@@ -1,0 +1,46 @@
+<dependencies>
+  <packages>
+    <package>com.android.support:appcompat-v7:24.0.+</package>
+    <package>com.android.support:support-v4:26.1.+</package>
+    <package>com.google.android.play:core:1.8.+</package>
+    <package>com.sglib.easymobile:easy-mobile:1.5.1</package>
+    <package>net.openid:appauth:0.7.+</package>
+  </packages>
+  <files>
+    <file>Assets/Plugins/Android/android.arch.core.common-1.1.0.jar</file>
+    <file>Assets/Plugins/Android/android.arch.core.runtime-1.1.0.aar</file>
+    <file>Assets/Plugins/Android/android.arch.lifecycle.common-1.1.0.jar</file>
+    <file>Assets/Plugins/Android/android.arch.lifecycle.livedata-core-1.1.0.aar</file>
+    <file>Assets/Plugins/Android/android.arch.lifecycle.runtime-1.1.0.aar</file>
+    <file>Assets/Plugins/Android/android.arch.lifecycle.viewmodel-1.1.0.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.animated-vector-drawable-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.appcompat-v7-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.customtabs-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.support-annotations-27.1.1.jar</file>
+    <file>Assets/Plugins/Android/com.android.support.support-compat-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.support-core-ui-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.support-core-utils-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.support-fragment-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.support-media-compat-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.support-v4-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.android.support.support-vector-drawable-27.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.play.core-1.8.3.aar</file>
+    <file>Assets/Plugins/Android/com.sglib.easymobile.easy-mobile-1.5.1.aar</file>
+    <file>Assets/Plugins/Android/net.openid.appauth-0.7.1.aar</file>
+  </files>
+  <settings>
+    <setting name="androidAbis" value="armeabi-v7a" />
+    <setting name="bundleId" value="com.DefaultCompany.BT_Unity" />
+    <setting name="explodeAars" value="True" />
+    <setting name="gradleBuildEnabled" value="True" />
+    <setting name="gradlePropertiesTemplateEnabled" value="False" />
+    <setting name="gradleTemplateEnabled" value="False" />
+    <setting name="installAndroidPackages" value="True" />
+    <setting name="localMavenRepoDir" value="Assets/GeneratedLocalRepo" />
+    <setting name="packageDir" value="Assets/Plugins/Android" />
+    <setting name="patchAndroidManifest" value="True" />
+    <setting name="patchMainTemplateGradle" value="True" />
+    <setting name="projectExportEnabled" value="False" />
+    <setting name="useJetifier" value="False" />
+  </settings>
+</dependencies>

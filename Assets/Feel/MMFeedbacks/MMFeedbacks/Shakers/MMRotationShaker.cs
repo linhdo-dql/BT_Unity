@@ -107,7 +107,7 @@ namespace MoreMountains.Feedbacks
 			GrabLocalRotation();
 		}
 
-		public virtual void GrabLocalRotation()
+		protected virtual void GrabLocalRotation()
 		{
 			switch (Mode)
 			{
